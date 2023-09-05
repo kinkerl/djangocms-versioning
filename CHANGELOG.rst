@@ -4,6 +4,23 @@ Changelog
 
 Unreleased
 ==========
+* feat: Reversable generic foreign key lookup from version
+* feat: Provide additional information about unpublished/published versions when sending signals
+
+2.0.0rc1
+========
+* fix: Only try modifying page language menu if it is present
+* fix: Added ``related_name`` attribute to the ``content_type`` foreign key of the ``Version`` model.
+* fix: burger menu adjusts to the design of django cms core dropdown
+* fix: bug that showed an archived version as unpublished in some cases in the state indicator
+* add: Dutch and French translations thanks to Stefan van den Eertwegh and François Palmierso
+* add: transifex support, German translations
+* add: Revert button as replacement for dysfunctional Edit button for unpublished
+  versions
+* add: status indicators and drop down menus for django cms page tree
+* fix: only offer languages for plugin copy with available content
+* feat: Add support for Django 4.0, 4.1 and Python 3.10 and 3.11
+* fix: migrations for MySql
 * ci: Updated isort params in lint workflow to meet current requirements.
 * ci: Update actions to v3 where possible, and coverage to v2 due to v1 sunset in Feb
 * ci: Remove ``os`` from test workflow matrix because it's unused
